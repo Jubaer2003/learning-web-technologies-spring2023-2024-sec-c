@@ -1,7 +1,7 @@
 <?php
     require_once('db.php');
 
-    function Add_Product($name, $buying_price, $selling_price, $display){
+    function addProduct($name, $buying_price, $selling_price, $display){
         $con = dbConnect();
 
     }
