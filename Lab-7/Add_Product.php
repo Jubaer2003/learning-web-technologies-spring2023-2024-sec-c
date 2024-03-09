@@ -1,20 +1,27 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name and Submit Button</title>
-</head>
-<body>
-    <form action="#" method="POST">
-        <label for="textbox">Name</label><br>
-        <input type="text" id="textbox" name="textbox"><br>
-        <label for="textbox">Buying Price</label><br>
-        <input type="text" id="textbox" name="textbox"><br>
-        <label for="textbox">Selling Price</label><br>
-        <input type="text" id="textbox" name="textbox"><br><hr>
-        <input type="checkbox" id="display" name="display" value="Display">
-        <label for="display"> Display</label><br><hr>
-        <button type="save">Save</button>
-    </form>
-</body>
+<?php
+    require_once('db.php');
+
+    function addproduct($name, $buying_price, $selling_price, $display){
+        $con = dbConnect();
+
+    }
+?>
+<html>
+    <head>
+        <title>Add Product</title>
+    </head>
+    <body>
+        <form method="post" action="addProduct.php" enctype="">
+            <fieldset style="width: 50%;">
+                <legend>ADD PRODUCT</legend>
+                Name <br><input type="text" name="name" value=""> <br> 
+                Buying Price <br><input type="number" name="buying_price" value=""> <br>
+                Selling Price <br><input type="number" name="selling_price" value=""> <br>
+                <hr>
+                <input type="checkbox" name="display" value=""> Display 
+                <hr>
+                <input type="submit" name="save" value="Save">
+            </fieldset>
+        </form>
+    </body>
 </html>
