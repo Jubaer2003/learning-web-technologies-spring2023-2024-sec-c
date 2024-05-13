@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.form-box input,
+.form-box select,
+.form-box button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.checkbox-group {
+    display: flex;
+}
+
+.checkbox-group label {
+    margin-right: 10px;
+}
+
+
+.profile {
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.profile h1 {
+    margin-bottom: 20px;
+}
+
+.profile p {
+    margin-bottom: 10px;
+}
